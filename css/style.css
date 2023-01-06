@@ -1,0 +1,267 @@
+@font-face { font-family: "RobotoL"; src: url("fonts/Roboto-Light.ttf"); }
+@font-face { font-family: "RobotoM"; src: url("fonts/Roboto-Medium.ttf"); }
+@font-face { font-family: "Shrik"; src: url("fonts/Shrikhand-Regular.ttf"); }
+
+:root {
+    --primary-color: #9356DC;
+    --secondaire-color: #FF79DA;
+    --tertiaire-color: #99E2D0;
+    --light-grey-color: #fbfbfb;
+    --grey-color: #ebebeb;
+    --footer-color: #2e2e2e;
+
+    /*var(--VARIABLE_NAME);*/
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "RobotoM";
+    background-color: var(--grey-color);
+    padding-top: 75px;
+}
+
+h1{
+    font-family: "Shrik";
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.t-ou{
+    border: solid 1px grey;
+}
+
+/*HEADER*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    background-color: white;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+/*MAIN*/
+
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 18px;
+    color: rgb(56, 56, 56);
+}
+
+.location > p{
+    padding: 0px 15px;
+}
+
+.location > p::before{
+    content: "\f3c5";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: relative;
+    left: -15px;
+}
+
+.intro{
+    background-color: var(--light-grey-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 40px;
+}
+
+.intro > h2{
+    font-size: 1.7em;
+    margin-bottom: 20px;
+}
+
+.intro > p{
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    font-family: "RobotoL";
+    color: rgb(84, 84, 84);
+}
+
+.button_explore{
+    color: white;
+    padding: 15px 20px; 
+    border-radius: 50px;
+    margin: 10px 0;
+    font-size: 1em;
+    letter-spacing: 0.3px;
+    background: rgb(255,121,218);
+    background: linear-gradient(160deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+}
+
+.tuto{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 40px 20px;
+}
+
+.tuto > h2{
+    margin-bottom: 20px;
+    font-size: 1.7em;
+}
+
+.s1, .s2, .s3{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background-color: var(--light-grey-color);
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.s1 > i, .s2 > i, .s3 > i{
+    position: absolute;
+    left: 40px;
+    font-size: 1.2em;
+    color: grey;
+}
+
+.s3{
+    background-color: #9256dc1d;
+}
+
+.s3 > i{
+    color: var(--primary-color);
+}
+
+.s1::before, .s2::before, .s3::before{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.8em;
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: #9356DC;
+}
+
+.s1::before{
+    content: "1";
+}
+
+.s2::before{
+    content: "2";
+}
+
+.s3::before{
+    content: "3";
+}
+
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+    background-color: var(--light-grey-color);
+}
+
+.restaurants > h2{
+    margin-bottom: 20px;
+    font-size: 1.7em;
+}
+
+.card_restaurant{
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.card_restaurant:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.card_restaurant > img{
+    object-fit: cover;
+    width: 100%;
+    height: 160px;
+}
+
+.details_card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:15px;
+}
+
+.details_card > i{
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+
+.new{
+    position: absolute;
+    z-index: 50;
+    background-color: rgb(157, 251, 219);
+    border-radius: 2px;
+    padding:5px 10px;
+    color: rgb(46, 169, 128);
+    top: 10px;
+    right: 10px;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: var(--footer-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer > img{
+    margin-bottom: 15px;
+}
+
+.link_footer{
+    display: flex;
+    align-items: center;
+
+}
+
+.link_footer > i{
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,14 +1,14 @@
 @font-face {
   font-family: "RobotoL";
-  src: url("fonts/Roboto-Light.ttf");
+  src: url("../fonts/Roboto-Light.ttf");
 }
 @font-face {
   font-family: "RobotoM";
-  src: url("fonts/Roboto-Medium.ttf");
+  src: url("../fonts/Roboto-Medium.ttf");
 }
 @font-face {
   font-family: "Shrik";
-  src: url("fonts/Shrikhand-Regular.ttf");
+  src: url("../fonts/Shrikhand-Regular.ttf");
 }
 * {
   box-sizing: border-box;
@@ -36,7 +36,44 @@ a {
   border: solid 1px grey;
 }
 
-/*STYLE FOR INDEX PAGE*/
+@font-face {
+  font-family: "RobotoL";
+  src: url("../fonts/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "RobotoM";
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "Shrik";
+  src: url("../fonts/Shrikhand-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "RobotoM";
+  background-color: #ebebeb;
+  padding-top: 75px;
+}
+
+h1 {
+  font-family: "Shrik";
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.t-ou {
+  border: solid 1px grey;
+}
+
 header {
   position: relative;
   display: flex;
@@ -55,6 +92,68 @@ header a {
   left: 20px;
   font-size: 20px;
   color: #2e2e2e;
+}
+
+@font-face {
+  font-family: "RobotoL";
+  src: url("../fonts/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "RobotoM";
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "Shrik";
+  src: url("../fonts/Shrikhand-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "RobotoM";
+  background-color: #ebebeb;
+  padding-top: 75px;
+}
+
+h1 {
+  font-family: "Shrik";
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.t-ou {
+  border: solid 1px grey;
+}
+
+footer {
+  background-color: #2e2e2e;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+footer svg {
+  margin-bottom: 15px;
+}
+footer .link_footer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  color: white;
+  font-size: 1.2em;
+  font-family: "RobotoL";
+}
+footer .link_footer i {
+  font-size: 0.8em;
+  width: 20px;
+  margin-right: 10px;
 }
 
 /*MAIN*/
@@ -210,31 +309,6 @@ header a {
 .card_restaurant .details_card i {
   font-size: 1.5em;
   margin-right: 20px;
-}
-
-/*FOOTER*/
-footer {
-  background-color: #2e2e2e;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-footer svg {
-  margin-bottom: 15px;
-}
-footer .link_footer {
-  display: flex;
-  align-items: center;
-  margin-bottom: 5px;
-  color: white;
-  font-size: 1.2em;
-  font-family: "RobotoL";
-}
-footer .link_footer i {
-  font-size: 0.8em;
-  width: 20px;
-  margin-right: 10px;
 }
 
 /*# sourceMappingURL=index.css.map */

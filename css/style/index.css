@@ -302,6 +302,7 @@ footer .link_footer i {
 }
 .card_restaurant .details_card {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 15px;
@@ -309,6 +310,9 @@ footer .link_footer i {
 .card_restaurant .details_card i {
   font-size: 1.5em;
   margin-right: 20px;
+}
+.card_restaurant .details_card .fav {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=index.css.map */

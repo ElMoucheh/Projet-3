@@ -19,7 +19,7 @@
 body {
   font-family: "RobotoM";
   background-color: #ebebeb;
-  padding-top: 75px;
+  position: relative;
 }
 
 h1 {
@@ -57,7 +57,7 @@ a {
 body {
   font-family: "RobotoM";
   background-color: #ebebeb;
-  padding-top: 75px;
+  position: relative;
 }
 
 h1 {
@@ -115,7 +115,7 @@ header a {
 body {
   font-family: "RobotoM";
   background-color: #ebebeb;
-  padding-top: 75px;
+  position: relative;
 }
 
 h1 {
@@ -156,7 +156,43 @@ footer .link_footer i {
   margin-right: 10px;
 }
 
+/*LOADER*/
 /*MAIN*/
+main {
+  opacity: 0;
+  animation: appear 1s forwards ease;
+  animation-delay: 3s;
+  margin-top: 75px;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  justify-content: center;
+  animation: disappear 0.5s forwards ease;
+  animation-delay: 2.8s;
+}
+.loader .load {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #000;
+  margin: 0 15px;
+  animation: jump infinite 0.3s alternate;
+}
+.loader .load.l2 {
+  animation-delay: 0.05s;
+}
+.loader .load.l3 {
+  animation-delay: 0.1s;
+}
+
 .location {
   display: flex;
   align-items: center;
@@ -327,6 +363,28 @@ footer .link_footer i {
   }
   to {
     text-shadow: 0px 0px 30px rgba(147, 86, 220, 0);
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes jump {
+  100% {
+    transform: translateY(-30px);
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
   }
 }
 

@@ -10,7 +10,9 @@
   font-family: "Shrik";
   src: url("../fonts/Shrikhand-Regular.ttf");
 }
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -36,6 +38,16 @@ a {
   border: solid 1px grey;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  main {
+    margin: 75px 10% 0 10%;
+  }
+}
+@media screen and (min-width: 992px) {
+  main {
+    margin: 75px 30% 0 30%;
+  }
+}
 @font-face {
   font-family: "RobotoL";
   src: url("../fonts/Roboto-Light.ttf");
@@ -48,7 +60,9 @@ a {
   font-family: "Shrik";
   src: url("../fonts/Shrikhand-Regular.ttf");
 }
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -74,6 +88,16 @@ a {
   border: solid 1px grey;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  main {
+    margin: 75px 10% 0 10%;
+  }
+}
+@media screen and (min-width: 992px) {
+  main {
+    margin: 75px 30% 0 30%;
+  }
+}
 header {
   position: relative;
   display: flex;
@@ -106,7 +130,9 @@ header a {
   font-family: "Shrik";
   src: url("../fonts/Shrikhand-Regular.ttf");
 }
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -132,6 +158,16 @@ a {
   border: solid 1px grey;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  main {
+    margin: 75px 10% 0 10%;
+  }
+}
+@media screen and (min-width: 992px) {
+  main {
+    margin: 75px 30% 0 30%;
+  }
+}
 footer {
   background-color: #2e2e2e;
   padding: 20px;
@@ -385,6 +421,11 @@ main {
   to {
     opacity: 0;
     z-index: -1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .intro {
+    border-radius: 30px 30px 0 0;
   }
 }
 

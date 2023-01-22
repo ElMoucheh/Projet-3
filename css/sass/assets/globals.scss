@@ -4,7 +4,9 @@
 @font-face { font-family: "RobotoM"; src: url("../fonts/Roboto-Medium.ttf"); }
 @font-face { font-family: "Shrik"; src: url("../fonts/Shrikhand-Regular.ttf"); }
 
-*{
+*,
+::before,
+::after{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -28,4 +30,16 @@ a{
 
 .t-ou{
     border: solid 1px grey;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    main{
+        margin: 75px 10% 0 10%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    main{
+        margin: 75px 30% 0 30%;
+    }
 }

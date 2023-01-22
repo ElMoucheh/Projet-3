@@ -69,7 +69,7 @@ main{
         transform: translateY(20px);
     }
     @for $i from 2 through 4 {
-        $j: ($i - 1)/2.5;
+        $j: calc(($i - 1)/2.5);
         &:nth-child(#{$i}){
             animation: appear 0.7s ease-in-out forwards;
             animation-delay: #{$j}s;
@@ -215,5 +215,17 @@ main{
     to{
         opacity: 1; /* L'élément est invisible au départ */
         transform: translateY(0px);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    main{
+        margin: 75px 10% 0 10%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    main{
+        margin: 75px 30% 0 30%;
     }
 }

@@ -258,15 +258,6 @@ main{
     }
 }
 
-@keyframes battement {
-    from{
-        text-shadow: 0px 0px 0px rgb(118, 5, 255);
-    }
-    to{
-        text-shadow: 0px 0px 30px rgba(147, 86, 220, 0);
-    }
-}
-
 @keyframes appear{
     from{
         opacity: 0;

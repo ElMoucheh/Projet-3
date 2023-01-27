@@ -353,16 +353,19 @@ main {
   padding: 15px;
 }
 .card_restaurant .details_card span {
+  font-size: 1.7em;
+  margin-right: 20px;
+}
+.card_restaurant .details_card span i {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: #000;
   -webkit-text-stroke-width: 1px;
-  font-size: 1.5em;
-  margin-right: 20px;
 }
-.card_restaurant .details_card span:hover {
-  -webkit-text-fill-color: #9356DC;
+.card_restaurant .details_card span:hover i {
+  background: -webkit-linear-gradient(80deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+  -webkit-background-clip: text;
   -webkit-text-stroke-width: 0px;
-  animation: battement 2s infinite cubic-bezier(0.66, 0, 0, 1);
+  -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
 

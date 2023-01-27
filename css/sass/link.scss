@@ -44,19 +44,24 @@ main{
     span{
 
         &{
-            -webkit-text-fill-color: transparent;
-            -webkit-text-stroke-color: #000;
-            -webkit-text-stroke-width: 1px;
             font-size: 1.7em;
             margin-right: 20px;
         }
 
-        &:hover{
-            -webkit-text-fill-color: $primary-color;
+        i{
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-color: #000;
+            -webkit-text-stroke-width: 1px;
+        }
+
+        &:hover i{
+            background: -webkit-linear-gradient(80deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+            -webkit-background-clip: text;
             -webkit-text-stroke-width: 0px;
-            animation: battement 2s infinite cubic-bezier(.66, 0, 0, 1);
+            -webkit-text-fill-color: transparent;
             cursor: pointer;
-        } 
+        }
+
     }
 }
 
@@ -191,10 +196,10 @@ main{
 
 @keyframes battement {
     from{
-        text-shadow: 0px 0px 0px rgb(118, 5, 255);
+        text-shadow: 0px 0px 0px rgb(182, 86, 220);
     }
     to{
-        text-shadow: 0px 0px 30px rgba(147, 86, 220, 0);
+        text-shadow: 0px 0px 30px rgba(147,86,220,0);
     }
 }
 
